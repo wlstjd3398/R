@@ -38,4 +38,22 @@ member_df$uid[3]
 member_df$name[2]
 
 # 데이터프레임 필수 내장함수
+iris
+class(iris) # 데이터 유형 확인
+
+View(iris) # 데이터 프레임을 표 형태로 출력
+head(iris) # 데이터 프레임 상위 6개 출력
+tail(iris) # 데이터 프레임 하위 6개 출력
+
+str(iris) # 데이터 프레임 컬럼 자료유형 확인
+dim(iris) # 데이터 프레임 행렬 구조 확인
+names(iris) # 데이터 프레임 속성(컬럼명) 확인
+summary(iris) # 데이터 프레임 요약통계 확인
+
+
+iris[,-5] # 제외
+aggregate(iris[,-5], by=list(iris$Species), mean) # 집계함수
+aggregate(iris[,-5], by=list(iris$Species), max) # 집계함수
+
+
 
